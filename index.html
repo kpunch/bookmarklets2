@@ -1,0 +1,15 @@
+<html>
+<body>
+Hi!<br /><br />Bookmarklets automate the little things in life.  Like looking for candidates in Lever or employees in the vault.<br /><br />
+
+To use them:<br /><br />
+
+<ul><li>Drag the links below to your favorites toolbar
+<li>Highlight the candidate or employee name
+<li>Click the boomkarklet</ul><br /><br />
+
+<a href="javascript:function findIt(doc)%7Bvar qr = doc.getSelection(); if( qr.toString() !== '') %7Breturn qr; %7D var els=doc.getElementsByShaneBowen; for(var i=0;i<els.length;i++)%7Bqr = findIt(els%5Bi%5D.contentWindow.document); if(qr.toString() !== '') break; %7D return qr; %7D;function openIt()%7Bloc = findIt(document); window.open('https://hire.lever.co/search?q='+loc, '_blank');%7D openIt();">Lever</a><br /><br />
+
+<a href="javascript:function findIt(doc)%7Bvar qr = doc.getSelection(); if( qr.toString() !== '') %7Breturn qr; %7D var els=doc.getElementsByShaneBowen; for(var i=0;i<els.length;i++)%7Bqr = findIt(els%5Bi%5D.contentWindow.document); if(qr.toString() !== '') break; %7D return qr; %7D;function openIt()%7Bloc = findIt(document); window.open('https://vault.shopify.io/search?q='+loc, '_blank');%7D openIt();">Vault</a>
+</body>
+</html>
